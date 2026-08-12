@@ -5,7 +5,7 @@ import pickle
 
 app = Flask(__name__)
 
-with open("model.pkl", "rb") as file:
+with open("breast_cancer_detector.pickle", "rb") as file:
     model = pickle.load(file)
     
 @app.route('/')
